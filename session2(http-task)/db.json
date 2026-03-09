@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "id": "q98if",
+      "name": "Some Data",
+      "description": "Example Data",
+      "createdAt": "2026-03-09T04:31:31.535Z"
+    },
+    {
+      "id": "a3ol5",
+      "name": "Gadget",
+      "description": "",
+      "createdAt": "2026-03-09T04:31:31.541Z"
+    }
+  ]
+}
