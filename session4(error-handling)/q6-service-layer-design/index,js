@@ -1,0 +1,19 @@
+async function createUser(req, res) {
+    const user = await User.create(req.body);
+    res.json(user);
+  }
+
+
+//   a) Why is this controller violating Separation of Concerns?
+// separation of concerns states that all the layers must have only 
+// one clearly defined task.
+// this controller does the following : 1> Direct DB access inside 
+// the controller which should live inside service layer 
+
+//   b) Refactor the architecture using Route, Controller, and Service.
+// Done
+
+//   c) Explain one advantage of the Service Layer pattern.
+// The service layer can be unit tested completely independently of Express, 
+// HTTP, or the database. You only need to mock direct dependencies and not 
+// the entire web stack.
