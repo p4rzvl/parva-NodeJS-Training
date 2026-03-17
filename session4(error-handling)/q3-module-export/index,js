@@ -1,0 +1,18 @@
+const math = require('./math');
+console.log(math.add(2,3));
+
+// a) What will be the output and why?
+// output: 5
+// this code can access the "add" function but the multiply fuction is lost
+// exports = (a,b) => a * b; -> this line reassigns the LOCAL exports 
+// variables to a new function which breaks the reference
+//
+// module.exports still points to add function
+
+
+// b) Explain why assigning a value to exports is a problem.
+// exports is just a local variable alias which points to module.exports. 
+// It is not a special keyword. Reassigning it with "=" breaks the reference link to the module
+
+// c) Rewrite the module correctly so both add and multiply functions are exported.
+// done in the math.js
